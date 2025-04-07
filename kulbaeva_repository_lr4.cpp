@@ -59,6 +59,6 @@ void displayMenu() {
 }
 
 // Функция получения выбора пользователя
-char getUserChoice() {
+void getUserChoice() {
    //реализуется Сашей
 }
