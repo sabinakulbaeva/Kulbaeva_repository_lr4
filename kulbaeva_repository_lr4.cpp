@@ -40,22 +40,37 @@ int main() {
 
 // Функция ввода чисел
 void inputNumbers(double& x, double& y, double& z) {
-    //реализуется Василием
+    cout << "Введите число x: ";
+    cin >> x;
+    cout << "Введите число y: ";
+    cin >> y;
+    cout << "Введите число z: ";
+    cin >> z;
 }
 
 // Функция нахождения суммы дробных частей
 double sumFractionalParts(double x, double y, double z) {
-    //реализуется Натальей
+    double fractionalPartX = modf(x, &x);
+    double fractionalPartY = modf(y, &y);
+    double fractionalPartZ = modf(z, &z);
+    return fractionalPartX + fractionalPartY + fractionalPartZ;
 }
 
 // Функция нахождения суммы целых частей
 int sumIntegerParts(double x, double y, double z) {
-    //реализуется Ваней
+    int integerPartX = static_cast<int>(x);
+    int integerPartY = static_cast<int>(y);
+    int integerPartZ = static_cast<int>(z);
+    return integerPartX + integerPartY + integerPartZ;
 }
 
 // Функция отображения меню
 void displayMenu() {
-   //реализуется Никитой
+    cout << "Выберите действие:" << endl;
+    cout << "1. Ввести числа" << endl;
+    cout << "2. Найти сумму дробных частей" << endl;
+    cout << "3. Найти сумму целых частей" << endl;
+    cout << "0. Выход" << endl;
 }
 
 // Функция получения выбора пользователя
