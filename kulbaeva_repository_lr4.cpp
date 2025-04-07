@@ -50,7 +50,10 @@ double sumFractionalParts(double x, double y, double z) {
 
 // Функция нахождения суммы целых частей
 int sumIntegerParts(double x, double y, double z) {
-    //реализуется Ваней
+    int integerPartX = static_cast<int>(x);
+    int integerPartY = static_cast<int>(y);
+    int integerPartZ = static_cast<int>(z);
+    return integerPartX + integerPartY + integerPartZ;
 }
 
 // Функция отображения меню
