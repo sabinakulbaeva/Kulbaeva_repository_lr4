@@ -60,5 +60,7 @@ void displayMenu() {
 
 // Функция получения выбора пользователя
 void getUserChoice() {
-   //реализуется Сашей
+    char choice;
+    cin >> choice;
+    return choice;
 }
