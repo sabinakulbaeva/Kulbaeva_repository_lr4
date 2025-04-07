@@ -45,7 +45,10 @@ void inputNumbers(double& x, double& y, double& z) {
 
 // Функция нахождения суммы дробных частей
 double sumFractionalParts(double x, double y, double z) {
-    //реализуется Натальей
+    double fractionalPartX = modf(x, &x);
+    double fractionalPartY = modf(y, &y);
+    double fractionalPartZ = modf(z, &z);
+    return fractionalPartX + fractionalPartY + fractionalPartZ;
 }
 
 // Функция нахождения суммы целых частей
